@@ -5,6 +5,8 @@ import hangman3 from "./images/hangman3.png"
 import hangman4 from "./images/hangman4.png"
 import hangman5 from "./images/hangman5.png"
 import hangman6 from "./images/hangman6.png"
+import hangman7 from "./images/hangman7.png"
+import hangman8 from "./images/hangman8.png"
  //props.count is set to hangman1 currently;
 export default function Gallows(props) {
     function image(){
@@ -30,6 +32,12 @@ export default function Gallows(props) {
             break;
             case 6:
             return hangman6;
+            break;
+            case 7:
+            return hangman7;
+            break;
+            case 8:
+            return hangman8;
             break;
         }
     }
