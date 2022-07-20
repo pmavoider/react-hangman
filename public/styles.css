@@ -4,3 +4,22 @@
 a {
     cursor:pointer;
 }
+body{
+    background:peachpuff;
+}
+#header{
+
+}
+#root{
+    width:100vw;
+    height:120vh;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+}
+.day{
+    background-image: url("./images2/WildWestLandscape-05.jpg");
+}
+.night{
+    background-image: url("./images2/WildWestLandscape-06.jpg");
+}
