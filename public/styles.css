@@ -4,18 +4,26 @@
 a {
     cursor:pointer;
 }
+h1{
+    font-family: 'Cinzel', serif;
+}
 body{
     background:peachpuff;
-}
-#header{
+    margin:0;
+    padding:0;
 
+}
+
+.background{
+    margin:0;
+    padding:0;
 }
 #root{
     width:100vw;
-    height:120vh;
-    margin:auto;
-    background-size: cover;
-    background-position: center;
+    height:100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
 }
 .day{
     background-image: url("./images2/WildWestLandscape-05.jpg");
@@ -23,3 +31,58 @@ body{
 .night{
     background-image: url("./images2/WildWestLandscape-06.jpg");
 }
+#light{
+    background-color:orange;
+    color:brown;
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top:8px;
+    }
+#dark{
+    background:slategrey;
+    color:lightgray;
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top:8px;
+}
+#h1day{
+    color:brown;
+}
+#h1night{
+    color:white;
+}
+footer{
+    background:rgba(255, 119, 0, 0.947);
+    padding:17px;
+    position:absolute;
+    bottom:-80px;
+    width:100%;
+    
+}
+ul{
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+    margin:auto;
+}
+#tumble{
+    width:35%;
+    position:absolute;
+    top:75vh;
+    animation-name:tumbleweed, leave;
+    animation-duration:3s;
+    opacity:0;
+
+
+}
+
+@keyframes tumbleweed{
+    0%{left:-20%; transform:rotate(25%);opacity:1;}
+    25% {transform:rotate(50%); opacity:1;}
+    50% {transform:rotate(75%);opacity:.75}
+    75% {transform:rotate(100%);}
+    100% {left:100%; transform:rotate(25%);}
+}
+
