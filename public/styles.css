@@ -32,8 +32,9 @@ body{
     background-image: url("./images2/WildWestLandscape-06.jpg");
 }
 #light{
-    background-color:orange;
-    color:brown;
+    background:rgba(255, 119, 0, 0.947);
+    border:1px solid darkgoldenrod;
+    color:black;
     position:absolute;
     top:0;
     right:0;
@@ -47,14 +48,29 @@ body{
     right:0;
     margin-top:8px;
 }
+.brown{
+    color:brown;
+}
 #h1day{
     color:brown;
 }
 #h1night{
     color:white;
 }
-footer{
+.btnBrown{
     background:rgba(255, 119, 0, 0.947);
+    border:1px solid darkgoldenrod;
+}
+.dayFooter{
+    background:rgba(255, 119, 0, 0.947);
+    padding:17px;
+    position:absolute;
+    bottom:-80px;
+    width:100%;
+    
+}
+.nightFooter{
+    background:rgba(64, 61, 85, 0.947);
     padding:17px;
     position:absolute;
     bottom:-80px;
@@ -72,17 +88,17 @@ ul{
     position:absolute;
     top:75vh;
     animation-name:tumbleweed, leave;
-    animation-duration:3s;
+    animation-duration:6s;
     opacity:0;
 
 
 }
 
 @keyframes tumbleweed{
-    0%{left:-20%; transform:rotate(25%);opacity:1;}
-    25% {transform:rotate(50%); opacity:1;}
-    50% {transform:rotate(75%);opacity:.75}
-    75% {transform:rotate(100%);}
-    100% {left:100%; transform:rotate(25%);}
+    0%{left:-20%; transform:rotate(0%);opacity:1;}
+    25% {transform:rotate(90deg); opacity:1;}
+    50% {transform:rotate(180deg);opacity:.75}
+    75% {transform:rotate(270deg);}
+    100% {left:100%; transform:rotate(360%);}
 }
 
