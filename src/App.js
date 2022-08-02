@@ -133,14 +133,14 @@ function App() {
 
   if (guesses !== 8) {
     return (<>
-    <div className="background">
+    <div className="background day" id="roots">
       <Header theme={theme} />
        <button class="btn-sm rounded ml-auto mr-3 d-block"  id={theme ? "light" : "dark"} onClick={changeTheme}>{theme ? "Night" : "Day"}</button>
       <Gallows count={guesses} />
       <div className="row mt-5 row-content">
 
         <div className="col-12 mt-5 ">
-          <button onClick={newGame} className={theme ? "mx-auto d-block mt-4 btn-lg btnBrown" : " btn-dark mx-auto d-block mt-4 btn-lg "} >New Game</button>
+          <button onClick={newGame} className={theme ? "mx-auto d-block mt-4 btn-lg btnBrown " : " btn-dark mx-auto d-block mt-4 btn-lg "} >New Game</button>
         </div>
       </div>
       

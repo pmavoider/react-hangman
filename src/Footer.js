@@ -2,8 +2,8 @@
 
 function Footer ({theme}) {
 
-    return(
-        <footer className={theme? "dayFooter" : "nightFooter"}>
+    return(<div className={theme? "dayFooter" : "nightFooter"}>
+        <footer >
             <div class="row">
                 <div class="col">
                     
@@ -16,6 +16,7 @@ function Footer ({theme}) {
                 </div>
             </div>
         </footer>
+        </div>
     )
 }
 export default Footer;
