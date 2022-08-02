@@ -8,7 +8,7 @@ h1{
     font-family: 'Cinzel', serif;
 }
 body{
-    background:peachpuff;
+    background:black;
     margin:0;
     padding:0;
 
@@ -19,7 +19,7 @@ body{
     padding:0;
 }
 #root{
-    width:100vw;
+    width:100%;
     height:100vh;
     background-size:cover;
     background-repeat: no-repeat;
@@ -64,16 +64,13 @@ body{
 .dayFooter{
     background:rgba(255, 119, 0, 0.947);
     padding:17px;
-    position:absolute;
-    bottom:-80px;
+    margin-top:20px;
     width:100%;
     
 }
 .nightFooter{
     background:rgba(64, 61, 85, 0.947);
     padding:17px;
-    position:absolute;
-    bottom:-80px;
     width:100%;
     
 }

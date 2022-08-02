@@ -2,7 +2,7 @@ import RollingWeed from "./images/rolling-weed.png"
 
 function Header({theme}){
    return( <div id="header" className="jumbotron-fluid">
-        <h1 id={theme ? "h1day" : "h1night"} className=" display-3 text-center py-5">HANGMAN</h1>
+        <h1 id={theme ? "h1day" : "h1night"} className=" text-center py-5">HANGMAN</h1>
         
         <img id="tumble" src={RollingWeed} />
     </div>)
